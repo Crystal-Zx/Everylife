@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#fff</color>
+    <color name="orange">#d17547</color>
+    <color name="gray">#656563</color>
+    <color name="egg">#FCE6C9</color>
+    <color name="light_gray">#c0c0c0</color>
+    <color name="gray1">#F5F5F5</color>
+    <color name="orange1">#E3A869</color>
+    <color name="purple">#733737</color>
+    <color name="fit_bg_color">#FFE7BA</color>
+    <color name="fit_bg_color1">#EED8AE</color>
+    <color name="fit_bg_color2">#CDBA96</color>
+</resources>

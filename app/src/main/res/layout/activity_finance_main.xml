@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <RelativeLayout
+        android:id="@+id/inform_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/orange"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <TableLayout
+            android:id="@+id/consumption_inform"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月收入："
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/m_income"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text="0.00"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow
+                android:layout_marginBottom="3dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月支出："
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/m_outcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text="0.00"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="本月预算："
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/m_budget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:text="0.00"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="right"
+            android:padding="0dp"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+        <ImageButton
+            style="@style/button_style"
+            android:id="@+id/to_record"
+            android:background="@drawable/border_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/to_graphical"
+            android:layout_alignBottom="@id/consumption_inform"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/to_record"/>
+        <ImageButton
+            style="@style/button_style"
+            android:id="@+id/to_graphical"
+            android:background="@drawable/border_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/consumption_inform"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:src="@drawable/to_graphical"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inform_background"
+        android:layout_above="@id/bottom_menu_line">
+
+    </FrameLayout>
+    <View
+        android:id="@+id/bottom_menu_line"
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="@color/gray"
+        android:layout_above="@id/bottom_menu"/>
+    <RadioGroup
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <RadioButton
+            style="@style/radioButton_style"
+            android:id="@+id/finance_info"
+            android:drawableTop="@drawable/finance_info_style"
+            android:text="资讯" />
+        <RadioButton
+            style="@style/radioButton_style"
+            android:id="@+id/account_book"
+            android:drawableTop="@drawable/account_book_style"
+            android:text="账本" />
+    </RadioGroup>
+</RelativeLayout>

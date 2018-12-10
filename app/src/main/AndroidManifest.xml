@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dell.myapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_laucher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <activity android:name=".Activity.LoginActivity">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.MainActivity" />
+        <activity android:name=".Activity.FinanceMainActivity" />
+        <activity android:name=".Activity.CategorySelectActivity" />
+        <activity android:name=".Activity.EditActivity" />
+        <activity android:name=".Activity.GraphicalActivity" />
+        <activity android:name=".Activity.InformActivity" />
+        <activity android:name=".Activity.FitMainActivity" />
+        <activity android:name=".Activity.FitRecordActivity" />
+        <activity
+            android:name=".Activity.LoadActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.EnergyActivity" />
+        <activity android:name=".Activity.NutrtionActivity" />
+        <activity android:name=".Activity.ResetPwActivity"></activity>
+    </application>
+
+</manifest>
